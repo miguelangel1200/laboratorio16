@@ -1,0 +1,75 @@
+.main-header{
+    background: url(../img/fondo_imagen_cabecera.jpg);
+    min-height: 500px;
+    /* Definir la imagen como unica */
+    background-size: cover;
+    height: 150px;
+}
+.body{
+    background-image:url(../img/6.jpg) ;
+}
+#contacto_fondo{
+    background-image:url(../img/6.jpg) ;
+}
+#titulo{
+font-family:sans-serif;
+font-size:3em;
+
+}
+.texto1{
+color:white;
+}
+.backgroup-overlay{
+background-color:rgba(48, 51, 107,.80);
+width: 100%;
+height: 100%;
+border-radius: 50px;
+}
+#boton{
+margin:12px ;
+}
+/* #mensaje-post{
+background-color:  rgba(48, 51, 107,.2);
+border: 2px black solid;
+width: 500px;
+position: absolute;
+left: 500px;
+top: auto; */
+
+/* border-radius: 5px;
+} */
+.comentarios{
+border:2px rgb(7, 7, 7) solid;
+position: relative;
+}
+
+.registro{
+background-color: rgba(48, 51, 107,.80); 
+width: 70%;  
+border-radius: 50px;
+}
+
+h2{
+text-align: center;
+background-color:aliceblue;
+border-radius:10px;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1{
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+text-align: center;  
+}
+#nombres{
+    color: black;
+}
+footer{
+    /* margin-top:160px; */
+    width:100%;
+    height:100%;
+}
+#pie{
+    background-color:#30336b ;
+}
+
+

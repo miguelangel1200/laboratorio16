@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Enlazar colores CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- Enlace para iconos -->
+    <script src="https://kit.fontawesome.com/0db00b1700.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <div class="container" id="contacto_fondo">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                  <!-- Realizar el logo con tamaño-->
+                  <img src="img/logo.jpg" alt="" style="width: 15%;">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link"  href="index.html">Inicio</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <form>
+            <header class="fondos py-2">
+              <div class="backgroup-overlay text-white py-5">
+                <div class="container">
+                  <div class="input-group mb-2 mr-sm-2 py-3">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text py-3">
+                        <i class="fas fa-user"></i>
+                      </div>
+                    </div>
+                    <input type="text" class="form-control" id="nombres" placeholder="Nombres">
+                  </div>
+                  <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text py-3">
+                        <i class="fas fa-user"></i>
+                      </div>
+                    </div>
+                    <input type="text" class="form-control" id="apellidos" placeholder="Apellidos">
+                  </div>
+                  <div class="input-group mb-2 mr-sm-2 py-3">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text py-3">
+                        <i class="fas fa-envelope-open"></i>
+                      </div>
+                    </div>
+                    <input type="text" class="form-control" id="correo" placeholder="Correo">
+                  </div>
+                  <div class="input-group mb-2 mr-sm-2 py-1">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text py-3">
+                        <i class="fas fa-phone-alt"></i>
+                      </div>
+                    </div>
+                    <input type="tel" class="form-control" id="telefono" placeholder="999999999" >
+                  </div>
+                  <div class="d-grid gap-2 mb-4">
+                    <button type="submit" class="btn btn-lg btn-primary" onclick="enviar()">Enviar Datos</button>
+                  </div>
+                </div>
+              </div>
+          </header>
+        </form>
+
+        <section class="container py-2">
+          <footer id="pie">
+            <div class="container">
+              <h5 class="text-center text-white">Integrantes:</h5>
+              <div class="row">
+                  <div class="col-xs-12 ">
+                      <h2 class="text-center" id="pie_nombre">- Turín Schraff, Darío José</h2>
+                      <h2 class="text-center" id="pie_nombre">- Medina Ventura, Miguel Angel</h2>
+                      <h2 class="text-center" id="pie_nombre">- Caceres Serna, Nicole Jane</h2>
+                      <h2 class="text-center" id="pie_nombre">- Zuñiga, Denzel </h2>
+                  </div>
+            </div>
+            <div class="text-center">
+              <h7 class="text-center text-white">Todos los derechos reservados @2021</h7> 
+          </div> 
+          </div>
+          </footer>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script>
+      function enviar(){
+        
+        var nombre = document.getElementById("nombres").value;
+        var apellido = document.getElementById("apellidos").value;
+        var correo = document.getElementById("correo").value;
+        var celular = document.getElementById("telefono").value;
+
+        if (celular != "" && apellido != "" && correo != "" && nombre != "" ){
+          alert("Muchas gracias por ingresar los datos")
+          alert("Su nombre es: " + nombre +"\n"+ "Su apellido es: "+ apellido + "\n" + "Su correo es: " + correo + "\n" + "Su número es: " + celular)
+        }
+        else 
+        {
+          alert("Ingrese sus datos por favor")
+        }
+
+      }
+    </script>
+</body>
+</html>
